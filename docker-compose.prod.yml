@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  web:
+    image: bretfisher/nodemongoapp
+    ports:
+     - "8080:8080"
+    links:
+     - mongo
+    environment:
+     - MONGO_HOST=mongo
+  mongo:
+    image: mongo:latest
