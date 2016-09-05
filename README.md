@@ -8,7 +8,7 @@ container. I use this to illustrate many Docker concepts and techniques:
 so you can dev locally, and show now multiple containers can work inside an overlay
 network.
 - User `docker-compose.prod.yml` to run `docker-compose bundle` for creating dab 
-files to deploy in production
+files to deploy in docker swarm. Scale web container and see how Routing Mesh works.
 
 
 ## Potential other lessions
