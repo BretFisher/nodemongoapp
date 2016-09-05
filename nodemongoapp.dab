@@ -1,0 +1,26 @@
+{
+  "Services": {
+    "mongo": {
+      "Image": "mongo@sha256:e599c71179c2bbe0eab56a7809d4a8d42ddcb625b32a7a665dc35bf5d3b0f7c4", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "web": {
+      "Env": [
+        "MONGO_HOST=mongo"
+      ], 
+      "Image": "bretfisher/nodemongoapp@sha256:eb03f85aaf2703e3866887bdef1de0670dd5135d8e861b8ab9cf7566b6786fb9", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 8080, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}
