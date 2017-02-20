@@ -1,11 +1,14 @@
 FROM node:latest
 
-COPY . /src
+COPY ./package.json /src/
 
 WORKDIR /src
 
 RUN npm install
 
 EXPOSE 8080
+EXPOSE 5858
 
-CMD ["node", "index.js"]
+COPY . /src
+
+CMD ["npm", "start"]

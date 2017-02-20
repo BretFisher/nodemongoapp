@@ -5,7 +5,8 @@ var PORT = 8080;
 
 // App
 var app = express();
-app.get('/', function (req, res) {
+app.get('/*', function (req, res) {
+  // TODO: this doesn't return proper headers for nginx cache to HIT properly
   res.send('Hello world\n Check console for db connection info');
 });
 
