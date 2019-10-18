@@ -6,7 +6,7 @@
   "author": "Bret Fisher <bret@fishbrains.com>",
   "dependencies": {
     "express": "^4.13.3",
-    "mongodb": "^2.0.48"
+    "mongodb": "^3.1.13"
   },
   "scripts": {
     "start" : "node index.js"
