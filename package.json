@@ -5,10 +5,10 @@
   "description": "Node.js Hello world app using docker",
   "author": "Bret Fisher <bret@fishbrains.com>",
   "dependencies": {
-    "express": "^4.13.3",
-    "mongodb": "^2.0.48"
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
   },
   "scripts": {
-    "start" : "node index.js"
+    "start": "node index.js"
   }
 }
